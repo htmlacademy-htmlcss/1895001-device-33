@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Интернет-магазин Девайс</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header-logo">
-        <img src="" alt="Логотип Интернет-магазина Девайс" />
+        <img src="images/logo-black.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс" />
       </div>
       <nav class="user-nav">
         <ul class="nav-list">
@@ -17,23 +19,33 @@
               method="get"
               class="search"
             >
+              <img src="images/search.svg" width="16" height="16 " alt="Поисковая строка">
               <input name="search" placeholder="Текст поиска" type="search" />
               <button type="submit">Найти</button>
             </form>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Войти</a>
+            <a href="#" class="nav-link">
+              <img src="images/user.svg" width="13" height="12" alt="Вход в личный кабинет">
+              Войти</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Сравнить</a>
+            <a href="#" class="nav-link">
+              <img src="images/compare.svg" width="10" height="12" alt="Сравнить товары">
+              Сравнить</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Корзина</a>
+            <a href="#" class="nav-link">
+              <img src="images/point-2.svg" width="21" height="21" alt="Два предмета в корзине">
+              <img src="images/cart.svg" width="16" height="14" alt="Корзина">
+              Корзина</a>
           </li>
         </ul>
       </nav>
       <div class="catalog-button">
-        <a href="catalog.html" class="nav-link">Каталог товаров</a>
+        <a href="catalog.html" class="nav-link">Каталог товаров
+          <img src="images/catalog-plus.svg" width="50" height="50" alt="Меню каталог">
+        </a>
       </div>
       <nav class="main-nav">
         <ul class="nav-list">
@@ -62,7 +74,7 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
         <div class="slider-info">
-          <img class="slider-image" src="" alt="Жалящий квадрокоптер" />
+          <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Жалящий квадрокоптер" />
           <h3 class="slider-title">
             Порхает как бабочка,<br />жалит как пчела!
           </h3>
@@ -72,11 +84,11 @@
           </p>
           <a href="#" class="button">Подробнее</a>
           <table class="slider-info-characteristic">
-            <tr>
+            <tr class="characteristic-numbers">
               <td>800 м</td>
               <td>50 м</td>
             </tr>
-            <tr>
+            <tr class="characteristic-text">
               <td>Дальность полета</td>
               <td>Радиус поражения</td>
             </tr>
@@ -89,37 +101,37 @@
         <ul class="categories-list">
           <li class="categories-item">
             <a href="#" class="categories-link">
-              <img src="" alt="Очки виртуальной реальности" />
+              <img src="images/popular/popular-1.svg" width="96" height="54" alt="Очки виртуальной реальности" />
               <span>Виртуальная реальность</span>
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-link">
-              <img src="" alt="Монопод" />
+              <img src="images/popular/popular-2.svg" width="85" height="117" alt="Монопод" />
               <span>Моноподы для селфи</span>
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-link">
-              <img src="" alt="Экшн-камера" />
+              <img src="images/popular/popular-3.svg" width="71" height="87" alt="Экшн-камера" />
               <span>Экшн-камеры</span>
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-link">
-              <img src="" alt="Фитнес-браслет" />
+              <img src="images/popular/popular-4.svg" width="107" height="65" alt="Фитнес-браслет" />
               <span>Фитнес-браслеты</span>
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-link">
-              <img src="" alt="Умные часы" />
+              <img src="images/popular/popular-5.svg" width="56" height="98" alt="Умные часы" />
               <span>Умные часы</span>
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-link">
-              <img src="" alt="Квадрокоптер" />
+              <img src="images/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптер" />
               <span>Квадрокоптеры</span>
             </a>
           </li>
@@ -151,13 +163,13 @@
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
             ваш этаж.
           </p>
-          <img src="" alt="Курьерская доставка" />
+          <img src="images/advantages/delivery-man.svg" width="136" height="164" alt="Курьерская доставка" />
         </div>
       </section>
 
       <section class="delivery">
         <div class="delivery-block">
-          <img src="" alt="Грузовичок" />
+          <img src="images/delivery-car.svg" width="47" height="31" alt="Грузовичок" />
           <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
           <img src="" alt="Информационный блок" />
         </div>
@@ -228,14 +240,14 @@
           </button>
         </form>
         <div class="mailing-free">
-          <img src="" alt="Галочка" class="mailing-free-pic" />
+          <img src="images/check-mark.svg" width="14" height="14" alt="Галочка" class="mailing-free-pic" />
           <p class="mailing-text">Это бесплатно</p>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <img src="" alt="Логотип Интернет-магазина Девайс" class="logo-footer" />
+      <img src="images/logo-yellow.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс" class="logo-footer" />
       <p class="footer-contacts-address-text">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </p>
@@ -257,17 +269,17 @@
       >
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://www.facebook.com/htmlacademy">
+          <a class="button-socials" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.instagram.com/htmlacademy/">
+          <a class="button-socials" href="https://www.instagram.com/htmlacademy/">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <a class="button-socials" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
