@@ -252,6 +252,19 @@ body {
   opacity: 0.3;
 }
 
+.cart-size {
+  width: 21px;
+  height: 21px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 25px;
+  right: 2px;
+}
+
 .inner-header-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
