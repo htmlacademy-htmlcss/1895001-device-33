@@ -32,7 +32,17 @@
   font-display: swap;
 }
 
+/* general settings */
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -40,9 +50,33 @@ body {
   color: #444444;
 }
 
+/* header */
+
 .main-header {
   background-color: #ffe17f;
   color: #000000;
+  margin-top: 40px;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 1040px;
+}
+
+.nav-item-right {
+  margin-left: auto;
+}
+
+.main-nav-list {
+  margin: 0 auto;
+  padding: 0;
+  width: 1040px;
+  margin-left: auto;
+  display: flex;
 }
 
 .catalog-button {
@@ -59,6 +93,10 @@ body {
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
+}
+
+.nav-item:not(:first-child):not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -99,7 +137,23 @@ body {
   margin: 12px;
 }
 
+/* main */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* slider */
+
+.slider-info {
+  display: flex;
+  align-items: center;
+}
 
 .slider-title {
   color: #000000;
@@ -129,7 +183,50 @@ body {
   text-decoration: none;
 }
 
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories-item {
+  width: 160px;
+  height: 253px;
+}
+
+.categories-link-image {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  justify-content: center;
+  align-items: center;
+}
+
+.monopod {
+  align-self: flex-end;
+}
+
 /* advantages */
+
+.advantages-container {
+  display: flex;
+}
+
+.advantages-list {
+  margin-right: 116px;
+}
+
+.advantages-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 694px;
+}
+
+.advatages-text-description {
+  width: 452px;
+}
 
 .advantages-subtitle {
   font-family: "Raleway", "Arial", sans-serif;
@@ -143,6 +240,17 @@ body {
 
 .delivery-block {
   background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.delivery-car {
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .delivery-title {
@@ -154,9 +262,26 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 auto;
+}
+
+.delivery-info {
+  width: 125px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* about */
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 520px;
+}
 
 .about-title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -179,6 +304,10 @@ body {
 }
 
 /* contacts */
+
+.contacts {
+  width: 532px;
+}
 
 .contacts-title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -203,12 +332,24 @@ body {
 
 /* mailing */
 
+.mailing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .mailing-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   color: #000000;
   font-size: 50px;
   line-height: 50px;
+  width: 348px;
+}
+
+.mailing-text {
+  width: 560px;
 }
 
 .check-mark::before {
@@ -225,13 +366,25 @@ body {
   color: #ffffff;
 }
 
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .page-footer-link {
   color: #ffffff;
+}
+
+.footer-first-stroke {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-contacts-address {
   font-size: 16px;
   line-height: 19px;
+  width: 239px;
 }
 
 .footer-contacts-phone {
@@ -240,13 +393,24 @@ body {
   color: #ffffff;
 }
 
+.footer-second-stroke{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .htmlacademy-link {
-  width: 114.9px;
-  height: 32.9px;
+  width: 115px;
+  height: 33px;
+  margin-left: auto;
 }
 
 /* catalog */
 /* header */
+
+.nav-list-catalog {
+  justify-content: space-between;
+}
 
 .exit {
   opacity: 0.3;
@@ -288,6 +452,11 @@ body {
 
 .filter {
   background-color: #f0f0f0;
+  display: flex;
+}
+
+.filter-block {
+  width: 320px;
 }
 
 .filter-title {
