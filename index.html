@@ -52,9 +52,10 @@
         <ul class="main-nav-list">
           <li class="nav-item">
             <div class="catalog-button">
-              <a href="catalog.html" class="nav-link"
+              <a href="catalog.html" class="nav-link catalog-button-link"
                 >Каталог товаров
                 <img
+                  class="catalog-image"
                   src="images/catalog-plus.svg"
                   width="50"
                   height="50"
@@ -64,13 +65,13 @@
             </div>
           </li>
           <li class="nav-item nav-item-right">
-            <a href="#" class="nav-link">Доставка</a>
+            <a href="#" class="nav-link main-nav-link">Доставка</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Гарантия</a>
+            <a href="#" class="nav-link main-nav-link">Гарантия</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Контакты</a>
+            <a href="#" class="nav-link main-nav-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -104,14 +105,16 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен<br />
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a href="#" class="button">Подробнее</a>
+              <div class="button-slider">
+                <a href="#" class="button">Подробнее</a>
+              </div>
               <table class="slider-info-characteristic">
                 <tr class="characteristic-numbers">
-                  <td>800 м</td>
+                  <td class="table-indent">800 м</td>
                   <td>50 м</td>
                 </tr>
                 <tr class="characteristic-text">
-                  <td>Дальность полета</td>
+                  <td class="table-indent">Дальность полета</td>
                   <td>Радиус поражения</td>
                 </tr>
               </table>
@@ -293,8 +296,8 @@
           <section class="contacts">
             <h2 class="contacts-title">Контакты</h2>
             <p class="contacts-text">
-              Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
-              проверить работоспособность покупки.
+              Вы можете забрать товар сами, заехав в наш офис.<br>
+              Заодно сможете проверить работоспособность покупки.
             </p>
             <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
             <address class="contacts-address">
@@ -317,8 +320,9 @@
         <section class="mailing">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-text">
-            Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.
+            Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции,<br>
+            спецпредложения и вот это вот всё.
           </p>
           <form
             action="https://echo.htmlacademy.ru/"
@@ -333,12 +337,12 @@
               id="mailing-email"
               required
             />
-            <button class="button mailing-button" type="submit">
+            <button class="mailing-button" type="submit">
               Подписаться
             </button>
           </form>
           <div class="mailing-free">
-            <p class="mailing-text check-mark">Это бесплатно</p>
+            <p class="check-mark">Это бесплатно</p>
           </div>
         </section>
       </div>
@@ -358,15 +362,15 @@
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
           <nav class="footer-nav">
-            <ul class="main-nav">
+            <ul class="footer-main-nav">
               <li class="nav-item">
-                <a href="#" class="nav-link">Доставка</a>
+                <a href="#" class="footer-nav-link">Доставка</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Гарантия</a>
+                <a href="#" class="footer-nav-link">Гарантия</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Контакты</a>
+                <a href="#" class="footer-nav-link">Контакты</a>
               </li>
             </ul>
           </nav>
