@@ -71,6 +71,10 @@ body {
   margin: 0 auto;
 }
 
+.user-nav {
+  margin-bottom: 30px;
+}
+
 .nav-list {
   margin: 0 auto;
   padding: 0;
@@ -502,10 +506,15 @@ body {
   color: #ffffff;
 }
 
+.logo-footer {
+  margin-bottom: 35px;
+}
+
 .footer-first-stroke {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 63px;
 }
 
 .footer-contacts-address {
@@ -584,18 +593,38 @@ body {
   right: 2px;
 }
 
+.main-inner {
+  padding-top: 35px;
+}
+
+.inner-header {
+  width: 1079px;
+  margin-left: 60px;
+}
+
 .inner-header-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs {
   color: #000000;
   font-size: 16px;
   line-height: 19px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 36px;
 }
 
 .breadcrumbs-link {
@@ -612,6 +641,13 @@ body {
 
 .filter-block {
   width: 320px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .filter-title {
@@ -632,10 +668,38 @@ body {
   color: #000000;
 }
 
+.button-filter {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* sort */
+
+.sort-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 840px;
+}
+
+.sort-buttons-list {
+  list-style-type: none;
+}
+
 /* product list */
 
 .products {
   background-color: #ffffff;
+}
+
+.product-list {
+  list-style-type: none;
 }
 
 .product-card-link {
@@ -658,8 +722,26 @@ body {
 
 /* pagination */
 
+.pagination-show-more {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 44px;
+}
+
 .pagination {
   background-color: #ebebeb;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 .pagination-link {
