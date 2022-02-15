@@ -542,7 +542,7 @@ body {
   text-transform: inherit;
 }
 
-.footer-nav-link:not(:last-child) {
+.footer-nav-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -690,6 +690,13 @@ body {
 
 .sort-buttons-list {
   list-style-type: none;
+  display: flex;
+  gap: 5px;
+}
+
+.arrow {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* product list */
