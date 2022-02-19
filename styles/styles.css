@@ -764,18 +764,35 @@ body {
   margin-bottom: 44px;
 }
 
-.pagination {
+.pagination-container {
   background-color: #ebebeb;
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 760px;
   margin: 0 auto;
-  padding: 25px;
+}
+
+.pagination-button {
+  width: 128px;
+  height: 71px;
+}
+
+.pagination-list{
+  list-style-type: none;
+  display: flex;
 }
 
 .pagination-link {
   text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  opacity: 0.3;
+
 }
 
 .pagination-text {
