@@ -114,15 +114,15 @@ body {
   margin-bottom: 17px;
 }
 
-.header-logo-image:hover {
+.logo-image:hover {
   opacity: 0.6;
 }
 
-.header-logo-image:active {
+.logo-image:active {
   opacity: 0.3;
 }
 
-.main-header-logo:focus-visible {
+.logo-image:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -541,6 +541,7 @@ body {
   height: 12px;
   border: 2px solid #000000;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav-button-checked {
@@ -1124,19 +1125,6 @@ body {
 .footer-logo {
   margin-bottom: 35px;
   display: inline-block;
-}
-
-.footer-logo:hover {
-  opacity: 0.6;
-}
-
-.footer-logo:active {
-  opacity: 0.3;
-}
-
-.footer-logo:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
 }
 
 .footer-info {
