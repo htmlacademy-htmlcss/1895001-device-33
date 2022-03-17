@@ -548,19 +548,6 @@ body {
   background-color: #000000;
 }
 
-.nav-button:hover {
-  opacity: 0.6;
-}
-
-.nav-button:active {
-  opacity: 0.3;
-}
-
-.nav-button:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
 .characteristic {
   display: flex;
   gap: 20px;
