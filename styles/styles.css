@@ -195,6 +195,7 @@ body {
   text-decoration: none;
   color: inherit;
   text-transform: inherit;
+  position: relative;
 }
 
 .nav-link:hover {
@@ -210,28 +211,7 @@ body {
   outline-offset: 2px;
 }
 
-.nav-link-underline {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  text-transform: inherit;
-  position: relative;
-}
-
-.nav-link-underline:hover {
-  opacity: 0.6;
-}
-
-.nav-link-underline:active {
-  opacity: 0.3;
-}
-
-.nav-link-underline:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.nav-link-underline:hover::before {
+.underline:hover::before {
   content: "";
   display: block;
   position: absolute;
@@ -429,38 +409,28 @@ body {
   width: 530px;
   position: absolute;
   margin-left: 30px;
-  top: 213px;
+  top: 211px;
   z-index: 1;
 }
 
-.slider-prev {
-  background-image: url(../images/arrow-left.svg);
+.slider-btn {
   width: 20px;
   height: 60px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
 }
 
-.slider-next {
-  background-image: url(../images/arrow-right.svg);
-  width: 20px;
-  height: 60px;
-  border: none;
-  background-color: transparent;
-}
-
-.slider-next:hover,
-.slider-prev:hover {
+.slider-btn:hover {
   opacity: 0.6;
 }
 
-.slider-next:active,
-.slider-prev:active {
+.slider-btn:active {
   opacity: 0.3;
 }
 
-.slider-next:focus-visible,
-.slider-prev:focus-visible {
+.slider-btn:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
