@@ -513,21 +513,6 @@ body {
   margin-left: 3px;
 }
 
-.button-slider-more:hover {
-  background: #ffe17f;
-  cursor: pointer;
-}
-
-.button-slider-more:active {
-  background: #ffcc33;
-  cursor: pointer;
-}
-
-.button-slider-more:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
 .slider-nav-button {
   display: flex;
   align-items: center;
@@ -920,19 +905,6 @@ body {
   display: inline-block;
 }
 
-.about-more:hover {
-  background: #ffe17f;
-}
-
-.about-more:active {
-  background: #ffcc33;
-}
-
-.about-more:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
 /* contacts */
 
 .contacts {
@@ -993,19 +965,6 @@ body {
 .contacts-more {
   width: 259px;
   display: inline-block;
-}
-
-.contacts-more:hover {
-  background: #ffe17f;
-}
-
-.contacts-more:active {
-  background: #ffcc33;
-}
-
-.contacts-more:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
 }
 
 /* mailing */
@@ -1314,24 +1273,6 @@ body {
   align-items: center;
 }
 
-.nav-link-login {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-link-login:hover {
-  opacity: 0.6;
-}
-
-.nav-link-login:active {
-  opacity: 0.3;
-}
-
-.nav-link-login:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
 .nav-list-catalog {
   justify-content: space-between;
 }
@@ -1371,24 +1312,6 @@ body {
   display: flex;
   gap: 36px;
   list-style-type: none;
-}
-
-.breadcrumbs-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.breadcrumbs-link:hover {
-  opacity: 0.6;
-}
-
-.breadcrumbs-link:active {
-  opacity: 0.3;
-}
-
-.breadcrumbs-link:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
 }
 
 .crumb {
@@ -1473,7 +1396,7 @@ body {
   flex-direction: column;
 }
 
-.button-filter {
+.button-show {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1488,22 +1411,19 @@ body {
   z-index: 2;
 }
 
-.button-filter:hover {
+.button-show:hover {
   background: #ffe17f;
-  cursor: pointer;
 }
 
-.button-filter:active {
+.button-show:active {
   background: #ffcc33;
-  cursor: pointer;
-  z-index: 1;
 }
 
-.button-filter:active::before {
+.button-show:active::before {
   display: none;
 }
 
-.button-filter:focus-visible {
+.button-show:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -1655,18 +1575,6 @@ body {
 .product-card:hover .button-product-more,
 .product-card:active .button-product-more {
   display: block;
-}
-
-.button-product-more:hover {
-  background: #ffe17f;
-}
-
-.button-product-more:active {
-  background: #ffc700;
-}
-
-.button-product-more:active::before {
-  display: none;
 }
 
 .new {
