@@ -33,7 +33,7 @@
                 />
               </label>
               <button class="search-button" type="submit">
-                <span class="search-button-text">Найти</span>
+                <span class="button-text">Найти</span>
               </button>
             </form>
             <ul class="nav-list">
@@ -187,6 +187,24 @@
                 <fieldset class="filter-range">
                   <legend class="filter-range-title">Стоимость</legend>
                   <div class="filter-range">
+                    <div class="filter-range-scale">
+                      <div class="range-bar" style="left: 0px; width: 119px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="filter-wrapper-inputs">
+                      <label class="catalog-filter-label min-label">
+                        от <input class="range-input" type="number" value="0" name="min-price" style="width: 30px;">
+                      </label>
+                      <label class="catalog-filter-label max-label">
+                        до <input class="range-input" type="number" value="5000" name="max-price" style="width: 71px">
+                      </label>
+                    </div>
                   </div>
                 </fieldset>
                 <fieldset class="filter-group">
@@ -195,32 +213,37 @@
                     <label class="control">
                       <input
                         type="checkbox"
-                        class="control-input"
+                        class="control-input visually-hidden"
                         name="black"
                         checked
                       />
-                      Черный
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                     <label class="control">
                       <input
                         type="checkbox"
-                        class="control-input"
+                        class="control-input visually-hidden"
                         name="white"
                         checked
                       />
-                      Белый
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                     <label class="control">
-                      <input type="checkbox" class="control-input" name="blue" />
-                      Синий
+                      <input type="checkbox" class="control-input visually-hidden" name="blue" />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                     <label class="control">
-                      <input type="checkbox" class="control-input" name="red" />
-                      Красный
+                      <input type="checkbox" class="control-input visually-hidden" name="red" />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                     <label class="control">
-                      <input type="checkbox" class="control-input" name="pink" />
-                      Розовый
+                      <input type="checkbox" class="control-input visually-hidden" name="pink" />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </div>
                 </fieldset>
@@ -229,22 +252,24 @@
                   <div class="filter-group-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="bluetooth"
                         value="yes"
                         checked
                       />
-                      Есть
+                      <span class="control-mark-circle"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="bluetooth"
                         value="no"
                       />
-                      Нет
+                      <span class="control-mark-circle"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </div>
                 </fieldset>
