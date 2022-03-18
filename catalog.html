@@ -33,7 +33,7 @@
                 />
               </label>
               <button class="search-button" type="submit">
-                <span>Найти</span>
+                <span class="search-button-text">Найти</span>
               </button>
             </form>
             <ul class="nav-list">
@@ -57,6 +57,39 @@
                       Корзина
                       <span class="cart-size">2</span>
                     </a>
+                    <div class="popover-cart">
+                      <ul class="popover-cart-list">
+                        <li class="popover-cart-item">
+                          <a href="#" class="popover-cart-link">
+                            <img src="images/selfie/product-1.jpg" alt="" width="39px" height="43px" class="popover-cart-image">
+                            <span>Любительская <br> селфи-палка</span>
+                          </a>
+                          <button class="popover-delete-button">
+                            <img src="images/cross.svg" width="10" height="10" alt="Удалить товар">
+                            <span class="visually-hidden">Удалить товар</span>
+                          </button>
+                        </li>
+                        <li class="popover-cart-item">
+                          <a href="#" class="popover-cart-link">
+                            <img src="images/selfie/product-2.jpg" alt="" width="39px" height="43px" class="popover-cart-image">
+                            <span>Профессиональная <br> селфи-палка</span>
+                          </a>
+                          <button class="popover-delete-button">
+                            <img src="images/cross.svg" width="10" height="10" alt="Удалить товар">
+                            <span class="visually-hidden">Удалить товар</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="popover-cart-price">
+                        <span class="popover-amount">Товаров: 2</span>
+                        <span class="popover-price">Сумма: 2000 ₽</span>
+                      </div>
+                      <div class="popover-open-cart">
+                        <a class="open-cart-block" href="#">
+                          <span class="open-cart-text">Открыть корзину</span>
+                        </a>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </li>
@@ -64,13 +97,50 @@
           </nav>
           <nav class="main-nav">
             <div class="catalog-button" tabindex="0">
-              <a
-                href="catalog.html"
-                class="catalog-button-link"
-                tabindex="-1"
+              <a href="catalog.html" class="catalog-button-link" tabindex="-1"
                 >Каталог товаров
               </a>
               <button class="catalog-plus" type="button" tabindex="-1"></button>
+              <div class="catalog-popover">
+                <div class="catalog-popover-wrapper">
+                  <ul class="catalog-popover-list">
+                    <li class="catalog-popover-item">
+                      <a href="#" class="catalog-popover-link">
+                        Виртуальная реальность
+                      </a>
+                    </li>
+                    <li class="catalog-popover-item">
+                      <a href="catalog.html" class="catalog-popover-link">
+                        Моноподы для cелфи
+                      </a>
+                    </li>
+                    <li class="catalog-popover-item">
+                      <a href="#" class="catalog-popover-link">
+                        Экшн-камеры
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="catalog-popover-list">
+                    <li class="catalog-popover-item">
+                      <a href="#" class="catalog-popover-link">
+                        Фитнес-браслеты
+                      </a>
+                    </li>
+                    <li class="catalog-popover-item">
+                      <a href="#" class="catalog-popover-link">
+                        Умные часы
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="catalog-popover-list">
+                    <li class="catalog-popover-item">
+                      <a href="#" class="catalog-popover-link">
+                        Квадрокоптеры
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <ul class="main-nav-list">
               <li class="nav-item">
@@ -94,13 +164,13 @@
           <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item crumb">
-              <a class="nav-link" href="index.html">Главная</a>
+              <a class="nav-link breadcrumb-index" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item crumb">
-              <a class="nav-link" href="#">Каталог товаров</a>
+              <a class="nav-link breadcrumb-index" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="nav-link" href="#">Моноподы для селфи</a>
+              <a class="nav-link breadcrumb-index" href="#">Моноподы для селфи</a>
             </li>
           </ul>
         </header>
