@@ -193,6 +193,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   color: inherit;
+  cursor: pointer;
 }
 
 .submit-button:hover,
@@ -295,6 +296,10 @@ body {
 }
 
 .catalog-button:hover .catalog-popover {
+  display: block;
+}
+
+.catalog-button:focus-within .catalog-popover {
   display: block;
 }
 
@@ -422,6 +427,10 @@ body {
 /* popover cart */
 
 .nav-right-item:hover .popover-cart {
+  display: block;
+}
+
+.nav-right-item:focus-within > .popover-cart {
   display: block;
 }
 
@@ -1595,7 +1604,7 @@ body {
   outline-offset: 2px;
 }
 
-.field-email .modal-input:invalid {
+.modal-input:invalid {
   border: 2px solid #ff3d3d;
 }
 
@@ -1621,6 +1630,11 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #ff3d3d;
+  display: none;
+}
+
+.modal-input:invalid ~ .error-input {
+  display: block;
 }
 
 .modal-tooltip-button {
@@ -2012,20 +2026,6 @@ body {
   opacity: 0.3;
 }
 
-.range-input {
-  border: none;
-  font: inherit;
-  background-color: transparent;
-  appearance: textfield;
-}
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
 .min-label {
   position: absolute;
   left: -15px;
@@ -2033,7 +2033,7 @@ body {
 
 .max-label {
   position: absolute;
-  right: 15px;
+  right: 50px;
 }
 
 /* filter checkbox */
