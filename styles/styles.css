@@ -1910,6 +1910,20 @@ body {
   background: #000000;
 }
 
+.range-input {
+  border: none;
+  font: inherit;
+  background-color: transparent;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .filter-group {
   margin: 0;
   padding: 0;
@@ -2012,7 +2026,7 @@ body {
 }
 
 .filter-wrapper-inputs {
-  margin-top: 11px;
+  margin-top: 15px;
   position: relative;
 }
 
