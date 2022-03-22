@@ -299,10 +299,6 @@ body {
   display: block;
 }
 
-.catalog-button:focus-within .catalog-popover {
-  display: block;
-}
-
 .catalog-button-link {
   display: inline-block;
   text-decoration: none;
@@ -320,9 +316,11 @@ body {
   opacity: 0.3;
 }
 
-.catalog-button:focus-visible {
+.catalog-button-link:focus-visible,
+.catalog-plus:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  opacity: 1;
 }
 
 .catalog-button-link:hover::before {
@@ -372,8 +370,13 @@ body {
   transform: rotate(90deg);
 }
 
-.catalog-button:hover .catalog-plus::after {
+.catalog-button:hover .catalog-plus::after,
+.catalog-plus:focus .catalog-plus::after {
   opacity: 0;
+}
+
+.catalog-plus:focus ~ .catalog-popover {
+  display: block;
 }
 
 .main-nav-list {
