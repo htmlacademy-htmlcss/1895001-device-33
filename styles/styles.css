@@ -180,7 +180,7 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
-  background: url(../images/search.svg);
+  background: url("../images/search.svg");
   background-repeat: no-repeat;
   top: 12px;
   left: 16px;
@@ -464,18 +464,6 @@ body {
 
 /* popover cart */
 
-.nav-right-item:hover .popover-cart {
-  display: block;
-}
-
-.nav-right-item:focus-within > .popover-cart {
-  display: block;
-}
-
-.popover-cart:hover {
-  display: block;
-}
-
 .popover-cart {
   position: absolute;
   right: -77px;
@@ -498,6 +486,18 @@ body {
   height: 14px;
   background-color: #000000;
   transform: rotate(45deg);
+}
+
+.nav-right-item:hover .popover-cart {
+  display: block;
+}
+
+.nav-right-item:focus-within > .popover-cart {
+  display: block;
+}
+
+.popover-cart:hover {
+  display: block;
 }
 
 .popover-cart-list {
@@ -1037,7 +1037,7 @@ body {
 
 .delivery-block::before {
   content: "";
-  background: #ffe17f url(../images/delivery-car.svg) center no-repeat;
+  background: #ffe17f url("../images/delivery-car.svg") center no-repeat;
   position: absolute;
   width: 125px;
   height: 100%;
@@ -1060,7 +1060,7 @@ body {
 }
 
 .delivery-block:hover::before {
-  background: #ffc700 url(../images/delivery-car.svg) center no-repeat;
+  background: #ffc700 url("../images/delivery-car.svg") center no-repeat;
 }
 
 .delivery-block:hover::after {
@@ -1479,15 +1479,15 @@ body {
 }
 
 .facebook {
-  background: url(../images/socials/facebook.svg) no-repeat center;
+  background: url("../images/socials/facebook.svg") no-repeat center;
 }
 
 .instagram {
-  background: url(../images/socials/insta.svg) no-repeat center;
+  background: url("../images/socials/insta.svg") no-repeat center;
 }
 
 .twitter {
-  background: url(../images/socials/twitter.svg) no-repeat center;
+  background: url("../images/socials/twitter.svg") no-repeat center;
 }
 
 .footer-contacts {
@@ -1565,7 +1565,7 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   border: 10px solid #000000;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .modal-order {
@@ -1575,7 +1575,7 @@ body {
 .modal-close-button {
   width: 26px;
   height: 26px;
-  background: url(../images/close-button.svg) center no-repeat;
+  background: url("../images/close-button.svg") center no-repeat;
   cursor: pointer;
   border: none;
   padding: 0;
@@ -1730,7 +1730,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   display: none;
 }
 
@@ -1810,7 +1810,6 @@ body {
 
 .modal-number::-webkit-outer-spin-button,
 .modal-number::-webkit-inner-spin-button {
-  appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1896,7 +1895,7 @@ body {
 
 .crumb::after {
   content: "";
-  background: url(../images/crumb.svg) no-repeat center;
+  background: url("../images/crumb.svg") no-repeat center;
   position: absolute;
   top: 7px;
   right: -19px;
@@ -1972,7 +1971,6 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -2114,7 +2112,7 @@ body {
 }
 
 .control-input:checked + .control-mark {
-  background: url(../images/filter-check.svg) no-repeat center;
+  background: url("../images/filter-check.svg") no-repeat center;
   border-color: #000000;
 }
 
@@ -2215,7 +2213,7 @@ body {
   height: 30px;
   padding: 0;
   border: none;
-  background: url(../images/sort-arrow-up.svg) center no-repeat;
+  background: url("../images/sort-arrow-up.svg") center no-repeat;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -2225,7 +2223,7 @@ body {
   height: 30px;
   padding: 0;
   border: none;
-  background: url(../images/sort-arrow-down.svg) center no-repeat;
+  background: url("../images/sort-arrow-down.svg") center no-repeat;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -2271,7 +2269,7 @@ body {
 }
 
 .product-info:focus-visible {
-  outline: 0px;
+  outline: 0;
 }
 
 .button-product-more {
@@ -2351,7 +2349,6 @@ body {
   background: transparent;
   border: 3px solid #e5e5e5;
   margin: 0 40px 44px 40px;
-  padding: 0;
   cursor: pointer;
   padding: 18px 0;
 }
@@ -2379,7 +2376,7 @@ body {
   color: #000000;
   font-size: 16px;
   line-height: 19px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .pagination-container {

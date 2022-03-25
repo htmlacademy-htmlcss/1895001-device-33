@@ -11,6 +11,7 @@
     <header class="main-header">
       <div class="header-catalog">
         <section class="header-container-catalog">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="main-header-logo logo-image" href="index.html">
             <img
               src="images/logo-black.svg"
@@ -31,6 +32,7 @@
                   name="search-value"
                   placeholder="Поиск по сайту"
                   type="search"
+                  id="search"
                 />
               </label>
               <button class="search-button submit-button" type="submit">
@@ -65,8 +67,8 @@
                             <img
                               src="images/selfie/product-1.jpg"
                               alt=""
-                              width="39px"
-                              height="43px"
+                              width="39"
+                              height="43"
                               class="popover-cart-image"
                             />
                             <span
@@ -89,8 +91,8 @@
                             <img
                               src="images/selfie/product-2.jpg"
                               alt=""
-                              width="39px"
-                              height="43px"
+                              width="39"
+                              height="43"
                               class="popover-cart-image"
                             />
                             <span
@@ -113,7 +115,7 @@
                         <span class="popover-amount">Товаров: 2</span>
                         <span class="popover-price">Сумма: 2000 ₽</span>
                       </div>
-                      <div href="#" class="popover-open-cart">
+                      <div class="popover-open-cart">
                         <a class="open-cart-block" href="#">
                           <span class="open-cart-text">Открыть корзину</span>
                         </a>
@@ -322,10 +324,10 @@
                     </select>
                   </li>
                   <li class="sort-filter-item sort-buttons">
-                    <button href="#" class="sort-up" type="button">
+                    <button class="sort-up" type="button">
                       <span class="visually-hidden">Вверх</span>
                     </button>
-                    <button href="#" class="sort-down" type="button">
+                    <button class="sort-down" type="button">
                       <span class="visually-hidden">Вниз</span>
                     </button>
                   </li>
@@ -422,7 +424,6 @@
                   <span class="pagination-text">Назад</span>
                 </button>
                 <ul class="pagination-list">
-                  </li>
                   <li class="pagination-item">
                     <a
                       class="pagination-link pagination-current" href="#"
@@ -463,6 +464,7 @@
           />
         </a>
         <section class="footer-info">
+          <h2 class="visually-hidden">Информация о нас</h2>
           <div class="footer-address">
             <p class="footer-address-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
