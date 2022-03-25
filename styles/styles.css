@@ -161,6 +161,7 @@ body {
 
 .user-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
@@ -305,13 +306,10 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.main-nav-list {
-  list-style-type: none;
-  gap: 45px;
+  margin-bottom: 25px;
 }
 
 .catalog-button {
@@ -376,6 +374,7 @@ body {
   background: transparent;
   padding: 0;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 .catalog-plus::before {
@@ -418,6 +417,9 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  gap: 45px;
+  max-width: 474px;
 }
 
 .enter::before {
@@ -457,6 +459,7 @@ body {
   bottom: 5px;
   left: -2px;
   font-size: 14px;
+  overflow: hidden;
 }
 
 /* popover cart */
@@ -591,7 +594,7 @@ body {
 
 .catalog-popover {
   width: 1160px;
-  height: 180px;
+  min-height: 180px;
   position: absolute;
   top: 30px;
   left: -60px;
@@ -604,6 +607,7 @@ body {
 
 .catalog-popover-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding-top: 33px;
 }
@@ -746,6 +750,7 @@ body {
   right: 50px;
   top: 82px;
   z-index: -1;
+  max-width: 250px;
 }
 
 .slider-title {
@@ -838,10 +843,9 @@ body {
 }
 
 .categories-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -849,7 +853,7 @@ body {
 
 .categories-item {
   width: 160px;
-  height: 253px;
+  min-height: 253px;
   display: flex;
 }
 
@@ -1083,6 +1087,7 @@ body {
   color: #000000;
   margin: 0 auto;
   padding: 38px 0;
+  width: 910px;
 }
 
 /* details */
@@ -1316,6 +1321,7 @@ body {
   margin-left: auto;
   padding: 13.5px 0;
   color: #444444;
+  max-width: 180px;
 }
 
 .check-mark::before {
@@ -1357,6 +1363,7 @@ body {
 
 .footer-info {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-address {
@@ -1377,7 +1384,7 @@ body {
 
 .footer-nav-list {
   display: flex;
-  width: 444px;
+  width: 454px;
   gap: 35px;
   flex-wrap: wrap;
   margin: 0;
@@ -1485,7 +1492,7 @@ body {
 
 .footer-contacts {
   display: flex;
-  width: 175px;
+  width: 172px;
   flex-direction: column;
   margin-top: 10px;
 }
@@ -1820,7 +1827,6 @@ body {
   width: 1160px;
   margin: 40px auto 0;
   background: #ffe17f;
-  height: 186px;
 }
 
 .header-container-catalog {
@@ -1875,6 +1881,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 36px;
   list-style-type: none;
 }
@@ -2042,6 +2049,7 @@ body {
 .filter-wrapper-inputs {
   margin-top: 15px;
   position: relative;
+  max-width: 200px;
 }
 
 .catalog-filter-label {
@@ -2096,6 +2104,13 @@ body {
   border: 2px solid #cccccc;
   border-radius: 3px;
   box-sizing: border-box;
+}
+
+.control-label {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .control-input:checked + .control-mark {
@@ -2364,6 +2379,7 @@ body {
   color: #000000;
   font-size: 16px;
   line-height: 19px;
+  padding: 0px 20px;
 }
 
 .pagination-container {
@@ -2371,12 +2387,13 @@ body {
   display: flex;
   justify-content: space-between;
   width: 760px;
+  overflow: auto;
   margin: 0 auto 78px;
 }
 
 .pagination-button {
   width: 128px;
-  height: 71px;
+  min-height: 71px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -2399,14 +2416,15 @@ body {
 .pagination-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 15.5px 0;
   margin: 0;
 }
 
 .pagination-link {
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: block;
   font-size: 16px;
   line-height: 20px;
