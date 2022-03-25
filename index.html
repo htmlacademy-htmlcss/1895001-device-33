@@ -5,17 +5,19 @@
     <title>Интернет-магазин Девайс</title>
 
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/favicon/favicon-32x32.png" />
   </head>
   <body>
     <header class="main-header">
       <div class="header-index">
         <section class="header-container">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="main-header-logo logo-image" href="index.html">
             <img
               src="images/logo-black.svg"
               width="145"
               height="36"
-              alt="Логотип Интернет-магазина Девайс"
+              alt="Логотип Интернет-магазина Девайс."
             />
           </a>
           <nav class="user-nav">
@@ -30,6 +32,7 @@
                   name="search-value"
                   placeholder="Поиск по сайту"
                   type="search"
+                  id="search"
                 />
               </label>
               <button class="search-button submit-button" type="submit">
@@ -56,9 +59,9 @@
                           <a href="#" class="popover-cart-link popover-form">
                             <img
                               src="images/selfie/product-1.jpg"
-                              alt=""
-                              width="39px"
-                              height="43px"
+                              alt="Любительская селфи-палка."
+                              width="39"
+                              height="43"
                               class="popover-cart-image"
                             />
                             <span
@@ -71,7 +74,7 @@
                               src="images/cross.svg"
                               width="10"
                               height="10"
-                              alt="Удалить товар"
+                              alt="Удалить товар."
                             />
                             <span class="visually-hidden">Удалить товар</span>
                           </button>
@@ -80,9 +83,9 @@
                           <a href="#" class="popover-cart-link popover-form">
                             <img
                               src="images/selfie/product-2.jpg"
-                              alt=""
-                              width="39px"
-                              height="43px"
+                              alt="Профессиональная селфи-палка."
+                              width="39"
+                              height="43"
                               class="popover-cart-image"
                             />
                             <span
@@ -95,7 +98,7 @@
                               src="images/cross.svg"
                               width="10"
                               height="10"
-                              alt="Удалить товар"
+                              alt="Удалить товар."
                             />
                             <span class="visually-hidden">Удалить товар</span>
                           </button>
@@ -105,7 +108,7 @@
                         <span class="popover-amount">Товаров: 2</span>
                         <span class="popover-price">Сумма: 2000 ₽</span>
                       </div>
-                      <div href="#" class="popover-open-cart">
+                      <div class="popover-open-cart">
                         <a class="open-cart-block" href="#">
                           <span class="open-cart-text">Открыть корзину</span>
                         </a>
@@ -186,7 +189,7 @@
               <button class="slider-btn" type="button">
                 <img
                   src="images/arrow-left.svg"
-                  alt="Предыдущее фото"
+                  alt="Предыдущее фото."
                   class="slider-button-image"
                   width="20"
                   height="60"
@@ -196,7 +199,7 @@
               <button class="slider-btn" type="button">
                 <img
                   src="images/arrow-right.svg"
-                  alt="Следующее фото"
+                  alt="Следующее фото."
                   class="slider-button-image"
                   width="20"
                   height="60"
@@ -211,7 +214,7 @@
                   src="images/slider/slider-1.png"
                   width="560"
                   height="560"
-                  alt="Жалящий квадрокоптер"
+                  alt="Жалящий квадрокоптер."
                 />
               </li>
               <li class="slider-item slider-2">
@@ -220,7 +223,7 @@
                   src="images/slider/slider-2.png"
                   width="560"
                   height="560"
-                  alt="Фитнес-браслет"
+                  alt="Фитнес-браслет."
                 />
               </li>
               <li class="slider-item slider-3">
@@ -229,7 +232,7 @@
                   src="images/slider/slider-3.png"
                   width="560"
                   height="560"
-                  alt="Селфи палка"
+                  alt="Селфи палка."
                 />
               </li>
             </ol>
@@ -340,7 +343,7 @@
                       src="images/popular/popular-1.svg"
                       width="96"
                       height="54"
-                      alt="Очки виртуальной реальности"
+                      alt="Очки виртуальной реальности."
                     />
                   </div>
                   <h3 class="category-title">Виртуальная реальность</h3>
@@ -354,10 +357,13 @@
                       src="images/popular/popular-2.svg"
                       width="85"
                       height="117"
-                      alt="Монопод"
+                      alt="Монопод."
                     />
                   </div>
-                  <h3 class="category-title">Моноподы для селфи</h3>
+                  <h3 class="category-title">
+                    Моноподы <br />
+                    для селфи
+                  </h3>
                 </a>
               </li>
               <li class="categories-item">
@@ -367,7 +373,7 @@
                       src="images/popular/popular-3.svg"
                       width="71"
                       height="87"
-                      alt="Экшн-камера"
+                      alt="Экшн-камера."
                     />
                   </div>
                   <h3 class="category-title">Экшн-камеры</h3>
@@ -380,7 +386,7 @@
                       src="images/popular/popular-4.svg"
                       width="107"
                       height="65"
-                      alt="Фитнес-браслет"
+                      alt="Фитнес-браслет."
                     />
                   </div>
                   <h3 class="category-title">Фитнес-браслеты</h3>
@@ -393,7 +399,7 @@
                       src="images/popular/popular-5.svg"
                       width="56"
                       height="98"
-                      alt="Умные часы"
+                      alt="Умные часы."
                     />
                   </div>
                   <h3 class="category-title">Умные часы</h3>
@@ -406,7 +412,7 @@
                       src="images/popular/popular-6.svg"
                       width="132"
                       height="69"
-                      alt="Квадрокоптер"
+                      alt="Квадрокоптер."
                     />
                   </div>
                   <h3 class="category-title">Квадрокоптеры</h3>
@@ -439,48 +445,52 @@
                   <div class="advatages-text-description">
                     <h3 class="advantages-subtitle">Доставка</h3>
                     <p class="advantages-description">
-                      Мы с удовольствием доставим ваш товар прямо к вашему
-                      подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-                      поднимая его на ваш этаж.
+                      Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо
+                      к&nbsp;вашему подъезду совершенно бесплатно! Ведь
+                      мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.
                     </p>
                   </div>
                   <img
                     src="images/advantages/delivery-man.svg"
                     width="136"
                     height="164"
-                    alt="Курьерская доставка"
+                    alt="Курьерская доставка."
+                    class="advantages-image"
                   />
                 </li>
                 <li class="advantages-text-item advantages-frame-2">
                   <div class="advatages-text-description">
                     <h3 class="advantages-subtitle">Гарантия</h3>
                     <p class="advantages-description">
-                      Если из-за возгорания купленного у нас товара у вас сгорит
-                      дом — не переживайте, мы выдадим вам новый. Товар, не дом,
-                      конечно же.
+                      Если из-за возгорания купленного у&nbsp;нас товара
+                      у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте,
+                      мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом,
+                      конечно&nbsp;же.
                     </p>
                   </div>
                   <img
                     src="images/advantages/guarantee.svg"
                     width="171"
                     height="195"
-                    alt="Гарантия на покупки"
+                    alt="Гарантия на покупки."
+                    class="advantages-image"
                   />
                 </li>
                 <li class="advantages-text-item advantages-frame-3">
                   <div class="advatages-text-description">
                     <h3 class="advantages-subtitle">Кредит</h3>
                     <p class="advantages-description">
-                      Залезть в долговую яму стало проще! Кредитные консультанты
-                      подберут для вас наиболее выгодные условия кредита.
-                      Выгодные для банка, разумеется.
+                      Залезть в&nbsp;долговую яму стало проще! Кредитные
+                      консультанты подберут для вас наиболее выгодные условия
+                      кредита. Выгодные для банка, разумеется.
                     </p>
                   </div>
                   <img
                     src="images/advantages/credit.svg"
                     width="156"
                     height="188"
-                    alt="Кредитование"
+                    alt="Кредитование."
+                    class="advantages-image"
                   />
                 </li>
               </ul>
@@ -596,10 +606,11 @@
             src="images/logo-yellow.svg"
             width="145"
             height="36"
-            alt="Логотип Интернет-магазина Девайс"
+            alt="Логотип Интернет-магазина Девайс."
           />
         </a>
         <section class="footer-info">
+          <h2 class="visually-hidden">Информация о нас</h2>
           <div class="footer-address">
             <p class="footer-address-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -690,7 +701,7 @@
               />
               <img
                 src="images/modal-name.svg"
-                alt="Имя"
+                alt="Имя."
                 class="modal-name-icon"
                 width="13"
                 height="12"
@@ -708,7 +719,7 @@
               />
               <img
                 src="images/modal-email.svg"
-                alt="Почта"
+                alt="Почта."
                 class="modal-email-icon"
                 width="15"
                 height="12"

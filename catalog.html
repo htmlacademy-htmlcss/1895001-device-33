@@ -5,17 +5,19 @@
     <title>Каталог</title>
 
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/favicon/favicon-32x32.png">
   </head>
   <body>
     <header class="main-header">
       <div class="header-catalog">
         <section class="header-container-catalog">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="main-header-logo logo-image" href="index.html">
             <img
               src="images/logo-black.svg"
               width="145"
               height="36"
-              alt="Логотип Интернет-магазина Девайс"
+              alt="Логотип Интернет-магазина Девайс."
             />
           </a>
           <nav class="user-nav">
@@ -30,6 +32,7 @@
                   name="search-value"
                   placeholder="Поиск по сайту"
                   type="search"
+                  id="search"
                 />
               </label>
               <button class="search-button submit-button" type="submit">
@@ -63,9 +66,9 @@
                           <a href="#" class="popover-cart-link popover-form">
                             <img
                               src="images/selfie/product-1.jpg"
-                              alt=""
-                              width="39px"
-                              height="43px"
+                              alt="Любительская селфи-палка."
+                              width="39"
+                              height="43"
                               class="popover-cart-image"
                             />
                             <span
@@ -78,7 +81,7 @@
                               src="images/cross.svg"
                               width="10"
                               height="10"
-                              alt="Удалить товар"
+                              alt="Удалить товар."
                             />
                             <span class="visually-hidden">Удалить товар</span>
                           </button>
@@ -87,9 +90,9 @@
                           <a href="#" class="popover-cart-link popover-form">
                             <img
                               src="images/selfie/product-2.jpg"
-                              alt=""
-                              width="39px"
-                              height="43px"
+                              alt="Профессиональная селфи-палка."
+                              width="39"
+                              height="43"
                               class="popover-cart-image"
                             />
                             <span
@@ -102,7 +105,7 @@
                               src="images/cross.svg"
                               width="10"
                               height="10"
-                              alt="Удалить товар"
+                              alt="Удалить товар."
                             />
                             <span class="visually-hidden">Удалить товар</span>
                           </button>
@@ -112,7 +115,7 @@
                         <span class="popover-amount">Товаров: 2</span>
                         <span class="popover-price">Сумма: 2000 ₽</span>
                       </div>
-                      <div href="#" class="popover-open-cart">
+                      <div class="popover-open-cart">
                         <a class="open-cart-block" href="#">
                           <span class="open-cart-text">Открыть корзину</span>
                         </a>
@@ -321,10 +324,10 @@
                     </select>
                   </li>
                   <li class="sort-filter-item sort-buttons">
-                    <button href="#" class="sort-up" type="button">
+                    <button class="sort-up" type="button">
                       <span class="visually-hidden">Вверх</span>
                     </button>
-                    <button href="#" class="sort-down" type="button">
+                    <button class="sort-down" type="button">
                       <span class="visually-hidden">Вниз</span>
                     </button>
                   </li>
@@ -333,14 +336,14 @@
 
               <ul class="product-list">
                 <li class="product-card">
-                  <p class="new">
+                  <p class="new visually-hidden">
                     <span class="new-product">New</span>
                   </p>
                   <img
                     src="images/selfie/product-1.jpg"
                     width="360"
                     height="380"
-                    alt="Любительская селфи-палка"
+                    alt="Любительская селфи-палка."
                     class="product-card-image"
                   />
                   <a class="product-info" href="#">
@@ -359,7 +362,7 @@
                     src="images/selfie/product-2.jpg"
                     width="360"
                     height="380"
-                    alt="Профессиональная селфи-палка"
+                    alt="Профессиональная селфи-палка."
                     class="product-card-image"
                   />
                   <a class="product-info" href="#">
@@ -378,7 +381,7 @@
                     src="images/selfie/product-3.jpg"
                     width="360"
                     height="380"
-                    alt="Непотопляемая селфи-палка"
+                    alt="Непотопляемая селфи-палка."
                     class="product-card-image"
                   />
                   <a class="product-info" href="#">
@@ -397,7 +400,7 @@
                     src="images/selfie/product-4.jpg"
                     width="360"
                     height="380"
-                    alt="Селфи-палка «Следуй за мной»"
+                    alt="Селфи-палка «Следуй за мной»."
                     class="product-card-image"
                   />
                   <a class="product-info" href="#">
@@ -421,7 +424,6 @@
                   <span class="pagination-text">Назад</span>
                 </button>
                 <ul class="pagination-list">
-                  </li>
                   <li class="pagination-item">
                     <a
                       class="pagination-link pagination-current" href="#"
@@ -458,10 +460,11 @@
             src="images/logo-yellow.svg"
             width="145"
             height="36"
-            alt="Логотип Интернет-магазина Девайс"
+            alt="Логотип Интернет-магазина Девайс."
           />
         </a>
         <section class="footer-info">
+          <h2 class="visually-hidden">Информация о нас</h2>
           <div class="footer-address">
             <p class="footer-address-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
